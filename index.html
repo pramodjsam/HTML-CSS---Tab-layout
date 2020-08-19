@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tab Section</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	 <!--google fonts-->
+	 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	 <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="hero">
+	<div class="btn-box">
+		<button id="btn1" onclick="openHTML()"><i class="fa fa-html5" aria-hidden="true"></i>HTML</button>
+		<button id="btn2"  onclick="openCSS()"><i class="fa fa-css3" aria-hidden="true"></i>CSS</button>
+		<button id="btn3" onclick="openJS()"><i class="fa fa-codepen" aria-hidden="true"></i>JAVASCRIPT</button>
+	</div>
+	<div id="content1" class="content">
+		<div class="content-left">
+			<h1>Learn HTML</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque molestie rutrum bibendum. Donec iaculis nibh eget magna elementum dignissim. Integer sed molestie purus. Suspendisse et mattis purus, non tristique est. In orci odio, ullamcorper a velit nec, sollicitudin rutrum enim. Quisque in diam et massa laoreet mattis nec sit amet nisi. Nulla erat ex, molestie in nisl convallis, viverra hendrerit libero. Sed gravida enim non nulla blandit, id sodales ante.</p>
+			<a href="">WATCH VIDEO</a>
+		</div>
+		<div class="content-right">
+			<img src="images/pic-1.png">
+		</div>
+	</div>
+
+	<div id="content2" class="content">
+		<div class="content-left">
+			<h1>Learn CSS</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque molestie rutrum bibendum. Donec iaculis nibh eget magna elementum dignissim. Integer sed molestie purus. Suspendisse et mattis purus, non tristique est. In orci odio, ullamcorper a velit nec, sollicitudin rutrum enim. Quisque in diam et massa laoreet mattis nec sit amet nisi. Nulla erat ex, molestie in nisl convallis, viverra hendrerit libero. Sed gravida enim non nulla blandit, id sodales ante.</p>
+			<a href="">WATCH VIDEO</a>
+		</div>
+		<div class="content-right">
+			<img src="images/pic-2.png">
+		</div>
+	</div>
+
+	<div id="content3" class="content">
+		<div class="content-left">
+			<h1>Learn JAVASCRIPT</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque molestie rutrum bibendum. Donec iaculis nibh eget magna elementum dignissim. Integer sed molestie purus. Suspendisse et mattis purus, non tristique est. In orci odio, ullamcorper a velit nec, sollicitudin rutrum enim. Quisque in diam et massa laoreet mattis nec sit amet nisi. Nulla erat ex, molestie in nisl convallis, viverra hendrerit libero. Sed gravida enim non nulla blandit, id sodales ante.</p>
+			<a href="">WATCH VIDEO</a>
+		</div>
+		<div class="content-right">
+			<img src="images/pic-3.png">
+		</div>
+	</div>
+</div>
+
+<script>
+	let content1 = document.getElementById("content1");
+	let content2 = document.getElementById("content2");
+	let content3 = document.getElementById("content3");
+	let btn1= document.getElementById("btn1");
+	let btn2= document.getElementById("btn2");
+	let btn3= document.getElementById("btn3");
+	function openHTML(){
+		content1.style.transform= "translateX(0)";
+		content2.style.transform= "translateX(100%)";
+		content3.style.transform= "translateX(100%)";
+		btn1.style.color="#ff7846";
+		btn2.style.color="#000";
+		btn3.style.color="#000";
+		content1.style.transitionDelay="0.3s";
+		content2.style.transitionDelay="0s";
+		content3.style.transitionDelay="0s";
+	}
+
+	function openCSS(){
+		content1.style.transform= "translateX(100%)";
+		content2.style.transform= "translateX(0)";
+		content3.style.transform= "translateX(100%)";
+		btn1.style.color="#000";
+		btn2.style.color="#ff7846";
+		btn3.style.color="#000";
+		content1.style.transitionDelay="0s";
+		content2.style.transitionDelay="0.3s";
+		content3.style.transitionDelay="0s";
+	}
+
+	function openJS(){
+		content1.style.transform= "translateX(100%)";
+		content2.style.transform= "translateX(100%)";
+		content3.style.transform= "translateX(0)";
+		btn1.style.color="#000";
+		btn2.style.color="#000";
+		btn3.style.color="#ff7846";
+		content1.style.transitionDelay="0s";
+		content2.style.transitionDelay="0s";
+		content3.style.transitionDelay="0.3s";
+	}
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
